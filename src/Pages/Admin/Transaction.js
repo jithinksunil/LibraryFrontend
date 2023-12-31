@@ -8,7 +8,7 @@ function Transaction() {
   const [userEmail, setUserEmail] = useState('');
   const navigate=useNavigate()
   useEffect(() => {
-    const token = localStorage.getItem('userToken');
+    const token = localStorage.getItem('accessToken');
     if (!token) {
       navigate('/admin');
     }

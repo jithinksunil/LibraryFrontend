@@ -12,7 +12,7 @@ const AdminSidebar = () => {
   const navigate=useNavigate()
   const handleLogout = () => {
 
-    localStorage.removeItem("adminToken");
+    localStorage.removeItem("accessToken");
   
     navigate('/admin/');
   };

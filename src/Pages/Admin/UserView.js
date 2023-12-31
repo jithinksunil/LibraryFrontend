@@ -8,7 +8,7 @@ function UserView() {
 const navigate=useNavigate()
   const [users, setUser] = useState([]);
   useEffect(() => {
-    const token = localStorage.getItem('userToken');
+    const token = localStorage.getItem('accessToken');
     if (!token) {
       navigate('/admin');
     }
